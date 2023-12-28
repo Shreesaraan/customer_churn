@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Churn Prediction</title>
+</head>
+<body>
+    <h1>Customer Churn Prediction</h1>
+    <form action="/predict" method="post">
+        <label for="CreditScore">Credit Score:</label>
+        <input type="text" name="CreditScore" required><br>
+
+        <label for="Geography">Geography:</label>
+        <select name="Geography" required>
+            <option value="France">France</option>
+            <option value="Germany">Germany</option>
+            <option value="Spain">Spain</option>
+        </select><br>
+
+        <label for="Gender">Gender:</label>
+        <select name="Gender" required>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select><br>
+
+        <label for="Age">Age:</label>
+        <input type="text" name="Age" required><br>
+
+        <label for="Tenure">Tenure:</label>
+        <input type="text" name="Tenure" required><br>
+
+        <label for="Balance">Balance:</label>
+        <input type="text" name="Balance" required><br>
+
+        <label for="NumOfProducts">Number of Products:</label>
+        <input type="text" name="NumOfProducts" required><br>
+
+        <label for="HasCrCard">Has Credit Card:</label>
+        <select name="HasCrCard" required>
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select><br>
+
+        <label for="IsActiveMember">Is Active Member:</label>
+        <select name="IsActiveMember" required>
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select><br>
+
+        <label for="EstimatedSalary">Estimated Salary:</label>
+        <input type="text" name="EstimatedSalary" required><br>
+
+        <button type="submit">Predict</button>
+    </form>
+</body>
+</html>
